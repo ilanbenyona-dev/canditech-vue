@@ -40,11 +40,11 @@ export default {
     data () {
         return { 
             // No branches :) !!
-            question_types: {
+            question_types: () => ({
                 'multiple': MultipleChoice,
                 'value': SingleChoice,
                 'open_text': OpenText 
-            }
+            })
         }
     },
     computed: {
@@ -52,7 +52,6 @@ export default {
         questionProps: () => this && this.dynamic_props && this.dynamic_props.filter(p => this.$props[p] === undefined)
     },
     mounted() {
-        console.log(this.question_types['multiple']);
     }
 }
 </script>

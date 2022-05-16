@@ -9,7 +9,6 @@ export default {
         'answer'
     ],
     mounted () {
-        console.log('asdas');
     }
 }
 </script>
